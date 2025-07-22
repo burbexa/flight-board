@@ -120,7 +120,3 @@ public void CalculateStatus_ShouldReturnScheduled_WhenDepartureIsFarAway()
 }
 ```
 
----
-
-## 📸 Optional Demo
-Include a screen recording or animated GIF of the running project to show off the UI and SignalR updates in action!

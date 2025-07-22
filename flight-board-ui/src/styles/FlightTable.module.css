@@ -1,0 +1,96 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.rowHover {
+  background: #f0f4ff;
+  transition: background 0.2s;
+}
+
+.deleteBtnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 36px;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.2s;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteBtn svg {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+tr.rowHover .deleteBtn svg {
+  opacity: 1;
+}
+
+.deleteBtn:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.statusScheduled {
+  color: #1976d2;
+  font-weight: 600;
+}
+.statusBoarding {
+  color: #388e3c;
+  font-weight: 600;
+}
+.statusDeparted {
+  color: #fbc02d;
+  font-weight: 600;
+}
+.statusLanded {
+  color: #0288d1;
+  font-weight: 600;
+}
+
+.newFlight {
+  animation: highlightNewFlight 1.5s ease-out;
+}
+
+@keyframes highlightNewFlight {
+  0% {
+    background-color: #fff9c4;
+  }
+  60% {
+    background-color: #fffde7;
+  }
+  100% {
+    background-color: #fff;
+  }
+} 

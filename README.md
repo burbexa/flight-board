@@ -76,12 +76,6 @@ npm run dev
 - `notistack` (for snackbars)
 - `jest`, `@testing-library/react`
 
----
-
-## 🐳 Docker Support (Optional)
-Dockerization of the backend and frontend is supported via:
-- `Dockerfile` for API and UI
-- `docker-compose.yml` to spin up both services + SQLite volume
 
 ---
 
